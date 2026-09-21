@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style.Nest — Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="topbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">STYLE.NEST</span>
+        <span class="logo-sub">WEAR ELEGANCE</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="shop.html">Sale</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:18px;">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="cart.html" class="cart-icon">&#128722;
+          <span class="cart-count">0</span>
+        </a>
+        <button class="nav-toggle">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="product-detail">
+
+      <!-- Thumbnails (filled in by script.js based on the product) -->
+      <div class="thumb-list" id="thumbList"></div>
+
+      <!-- Main image -->
+      <div class="main-image">
+        <img src="assets/images/yellow-1.jpg" id="mainImage" alt="Product image">
+      </div>
+
+      <!-- Info -->
+      <div class="detail-info">
+        <div class="tag-new" id="prodTag">NEW ARRIVAL</div>
+        <h1 id="prodTitle">Yellow Puffer Jacket</h1>
+
+        <div class="rating"><span class="stars" id="prodStars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span id="prodReviews">4.8 (124 reviews)</span></div>
+
+        <div class="price-row" style="margin-top:14px;">
+          <span class="price" id="prodPrice">$94.99</span>
+          <span class="old-price" id="prodOldPrice">$129.99</span>
+          <span class="discount" id="prodDiscount">31% OFF</span>
+        </div>
+
+        <p class="desc" id="prodDesc">A bold, oversized puffer jacket in sunshine yellow.</p>
+
+        <div class="option-block">
+          <label>Color</label>
+          <div class="swatches">
+            <span class="swatch active" data-color="Yellow" style="background:#f5c518;"></span>
+            <span class="swatch" data-color="Black" style="background:#0e0e0e; border:1px solid #444;"></span>
+            <span class="swatch" data-color="Olive" style="background:#5b5b3f;"></span>
+          </div>
+        </div>
+
+        <div class="option-block">
+          <label>Size</label>
+          <div class="sizes">
+            <button class="size-btn">S</button>
+            <button class="size-btn active">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+
+        <div class="qty-row">
+          <div class="qty-control">
+            <button id="qtyMinus">-</button>
+            <span id="qtyValue">1</span>
+            <button id="qtyPlus">+</button>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <button id="detailAddBtn" class="btn btn-yellow" data-name="Yellow Puffer Jacket" data-price="94.99">Add to Cart</button>
+          <a href="cart.html" class="btn btn-outline">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="active" data-tab="descTab">Description</button>
+        <button data-tab="sizeTab">Size Guide</button>
+        <button data-tab="reviewTab" id="reviewTabHeading">Reviews (124)</button>
+      </div>
+
+      <div class="tab-panel active" id="descTab">
+        <p id="prodDescLong">The item is crafted with premium quality fabric to keep you warm without compromising on style.</p>
+        <ul id="prodFeatures">
+          <li>Premium quality water-resistant fabric</li>
+          <li>Lightweight &amp; breathable</li>
+          <li>Warm insulation for cold weather</li>
+          <li>Stylish oversized fit</li>
+          <li>Available in multiple colors</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="sizeTab">
+        <p>S: Chest 36" · M: Chest 39" · L: Chest 42" · XL: Chest 45". For an oversized fit, we recommend sizing up.</p>
+      </div>
+
+      <div class="tab-panel" id="reviewTab">
+        <p id="reviewTabText">4.8 out of 5 based on 124 reviews. "Warm, lightweight and looks great" is the most common comment from customers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo-main" style="color:#f5c518;">STYLE.NEST</span>
+          <p>Premium jackets and hoodies for everyday adventures. Built with a design brief, coded by hand.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+            <li><a href="shop.html">Sale</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Style.Nest. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

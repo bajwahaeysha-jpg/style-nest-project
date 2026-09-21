@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Style.Nest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="topbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-main">STYLE.NEST</span>
+        <span class="logo-sub">WEAR ELEGANCE</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html">Sale</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:18px;">
+        <div class="search-box">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="cart.html" class="cart-icon active">&#128722;
+          <span class="cart-count">0</span>
+        </a>
+        <button class="nav-toggle">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Your Cart</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div id="cartWrapper">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cartBody"></tbody>
+        </table>
+
+        <div class="cart-summary">
+          <div class="row"><span>Subtotal</span><span id="subtotalValue">$0.00</span></div>
+          <div class="row"><span>Shipping</span><span id="shippingValue">$0.00</span></div>
+          <div class="row total"><span>Total</span><span id="totalValue">$0.00</span></div>
+          <button id="checkoutBtn" class="btn btn-yellow btn-block" style="margin-top:18px;">Checkout</button>
+          <p class="form-note" id="checkoutNote" style="text-align:center; margin-top:10px;"></p>
+        </div>
+      </div>
+
+      <div id="orderConfirmed" class="empty-cart" style="display:none;">
+        <p style="color:var(--yellow); font-size:20px; font-weight:700; margin-bottom:8px;">Order placed!</p>
+        <p id="orderConfirmedDetail"></p>
+        <a href="shop.html" class="btn btn-yellow" style="margin-top:16px;">Continue Shopping</a>
+      </div>
+
+      <div id="emptyCart" class="empty-cart">
+        <p>Your cart is empty.</p>
+        <a href="shop.html" class="btn btn-yellow" style="margin-top:16px;">Start Shopping</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="logo-main" style="color:#f5c518;">STYLE.NEST</span>
+          <p>Premium jackets and hoodies for everyday adventures. Built with a design brief, coded by hand.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+            <li><a href="shop.html">Sale</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Style.Nest. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
